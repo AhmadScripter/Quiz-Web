@@ -28,3 +28,9 @@
 .result-text{
     margin-left: 15px;
 }
+
+@media only screen and (max-width: 500px) {
+    .container {
+        padding: 10px;
+    }
+}
