@@ -1,9 +1,9 @@
-.container-fluid{
+.container-fluid {
     min-height: 100vh;
     position: relative;
 }
 
-.container-fluid::before{
+.container-fluid::before {
     content: '';
     position: absolute;
     top: 0;
@@ -14,67 +14,102 @@
     opacity: 0.7;
 }
 
-.content{
+.content {
     margin-top: 10px;
     color: #333;
     z-index: 2;
 }
-.bg{
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    padding: 10px 20px;
-}
-header{
+
+header {
     border: 2px solid;
 }
-header .logo{
+
+header .logo {
     width: 150px;
 }
-header .timer-icon{
+
+header .timer-icon {
     width: 25px;
+    margin-left: 5px;
 }
-hr{
+header .text-danger{
+    color: red;
+}
+hr {
     margin: 0;
     padding: 5px;
 }
 
-.question{
+.question {
     margin: 10px 0;
 }
 
-.answers .option{
+.answers .option {
     margin: 2px;
 }
 
-.bottom-row{
+.bottom-row {
     padding: 10px;
     margin: 10px;
-    border: 2px solid;
+    border: 1px solid #c3e6cb;
 }
-.fa-arrow-right, .fa-arrow-left{
+
+.fa-arrow-right,
+.fa-arrow-left {
     font-size: 20px;
 }
-i{
+
+i {
     cursor: pointer;
 }
-footer{
-    border: 2px solid;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 10px;
-    gap: 5px;
+.option{
+    cursor: pointer;
 }
-footer div{
-    width: 20px;
-    height: 20px;
-    border-radius: 30px;
+.option.correct {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.option.incorrect {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+.option.disabled {
+    pointer-events: none;
+    opacity: 0.6;
+  }
+  
+.bottom-row .fa-arrow-left,
+.bottom-row .fa-arrow-right {
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+footer div {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ccc;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: red;
+}
+
+footer div.current {
+    background-color: #007bff;
+}
+
+footer div.answered {
+    background-color: #28a745;
+}
+
+.btn{
+    margin-top: 15px;
+    color: #fff;
+width: 100px !important;
 }

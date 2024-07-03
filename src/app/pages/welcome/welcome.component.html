@@ -3,16 +3,21 @@
         <div class="content col-md-10 bg">
             <div class="row d-flex align-items-center">
                 <div class="col-md-6">
-                    <img src="../../../assets/welcome.png" alt="">
+                    <img data-aos="zoom-out-down" src="../../../assets/welcome.png" alt>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6" data-aos="fade-left">
                     <h1>Welcome to the Quiz</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Aspernatur inventore aut nemo nobis molestiae laboriosam
-                        cum, dolorem minus quod.</p>
-                    <button class="btn btn-primary">Start Quiz</button>
+                    <p>Welcome to the quiz! Get ready to test your knowledge on
+                        Computer Science. This interactive quiz will challenge
+                        you with a variety of questions and provide immediate
+                        feedback on your results. So, are you ready to begin?
+                    </p>
+                    <button class="btn btn-primary"
+                        (click)="moveToLoginPage()">Start Quiz</button>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<router-outlet></router-outlet>

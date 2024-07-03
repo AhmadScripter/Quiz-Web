@@ -37,11 +37,3 @@
 form div {
     text-align: left;
 }
-.btn{
-    background: #9570e3;
-    color: #fff;
-    transition: background 0.5s ease-in;
-}
-.btn:hover{
-    background: #7356b0;
-}

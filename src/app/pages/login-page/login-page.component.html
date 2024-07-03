@@ -4,17 +4,16 @@
         <h2>Welcome to the Quiz</h2>
         <p>Please input your User Id and password to start Quiz</p>
 
-        <form>
+        <form (ngSubmit)="onSubmit()">
             <div class="mb-3">
-                <label for="userIdInput" class="form-label">User Id</label>
-                <input type="email" class="form-control" id="userIdInput" placeholder="2021-ag-6005">
+              <label for="userIdInput" class="form-label">User Id</label>
+              <input type="text" class="form-control" id="userIdInput" [(ngModel)]="userId" name="userId" placeholder="2021-ag-6005" required>
             </div>
             <div class="mb-3">
-                <label for="passwordInput" class="form-label">Password</label>
-                <input type="password" class="form-control" id="passwordInput"
-                    rows="3">
+              <label for="passwordInput" class="form-label">Password</label>
+              <input type="password" class="form-control" id="passwordInput" [(ngModel)]="password" name="password" required>
             </div>
-            <button class="btn" type="submit">Submit</button>
-        </form>
+            <button mat-raised-button class="btn btn-primary" type="submit">Submit</button>
+          </form>
     </div>
 </div>
